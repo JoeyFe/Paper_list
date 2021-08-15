@@ -119,6 +119,9 @@ learning via robust gradient aggregation,” in SysML, 2019.
 
 ### 1、同态加密
 比较有名的RSA [100], El Gamal [93], Paillier [92]
+
+![image](https://user-images.githubusercontent.com/65484555/129477585-c80028c1-b32f-4a4f-ba78-fb6d22c561e2.png)
+
 讲了一些用同态加密保护分布式机器学习的方法
 ### 2、安全多方计算
 >[91] P. Mohassel and Y. Zhang, “Secureml: A system for scalable privacy-preserving machine learning,” in SP, 2017, pp. 19–38.
@@ -134,7 +137,7 @@ Local Differential Privacy (LDP)局部差异隐私：数据所有者（参与方
 Distributed Differential Privacy (DDP)分布式差分隐私：可以说是取每个参与方做差分隐私的参数，学习他的分布学到一个代表所有参与方差分隐私的参数，（具体要看论文）
 
 ## 6 ROBUSTNESS-FOCUSED FL DEFENSE 
-### 6.1 Byzantine Robustness 
+### 6.1 <font color=#00ffff> Byzantine Robustness </font>
 对于拜占庭 Byzantine-resilient aggregation，如果高达50%的参与者在对抗时收敛是鲁棒的，则为拜占庭容错[13]
 
 具体实践
@@ -175,6 +178,8 @@ Distributed Differential Privacy (DDP)分布式差分隐私：可以说是取每
 >[30] J. Bernstein, J. Zhao, K. Azizzadenesheli, and A. Anandkumar,“signSGD with majority vote is communication efficient and byzantine fault tolerant,” in In Seventh International Conference on Learning Representations (ICLR), 2019.
 >与多数投票相结合，使参与者能够上传其梯度的元素符号，以抵御三种半“盲”的拜占庭敌人：(i)任意调整随机梯度估计的对手；(ii)随机分配随机梯度每个坐标的符号；(iii)反转其随机梯度估计的对手。
 
+![image](https://user-images.githubusercontent.com/65484555/129477592-ffbfb69d-c50c-4ba2-b74e-43c421bbcaf5.png)
+
 ### 6.2 Sybil Robustness 
 提到一个FoolsGold方法,看这篇文章的表述看的不是很明白
 >[28] C. Fung, C. J. Yoon, and I. Beschastnikh, “Mitigating sybils in federated learning poisoning,” CoRR, arXiv:1808.04866, 2018.
@@ -191,8 +196,9 @@ Distributed Differential Privacy (DDP)分布式差分隐私：可以说是取每
 * 当前隐私保护技术的弱点：对抗训练能否帮助提高联邦学习的鲁棒性（主要是由于联邦学习的数据不一定是独立同分布的）、能否减小差分隐私对模型精度的影响
 * 优化防御机制部署：当部署防御机制以检查是否有对手攻击FL系统时，FL服务器将需要额外的计算成本。此外，不同类型的防御机制可能对不同的攻击有不同的效果，并产生不同的成本。研究如何优化部署防御机制或宣布威慑措施的时机是很重要的。博弈论研究有望解决这一挑战。
 * 同时实现多个目标：（1)快速算法收敛；(2)良好的世代 警报性能；(3)通信效率；(4)容错；(5)隐私保护；以及(6）针对有针对性、无目标中毒攻击和搭便车者的健壮性 （可以当作评价指标[140]，[141]同时解决了协作 的公平和隐私；[132]提出了一个健壮和公平的联邦学习(RFFL)框架来解决协作公平和拜占庭的鲁棒性）
-##8 CONCLUSIONS
+## 8 CONCLUSIONS
 关于FL的全球合作
+
 [www.federated-learning.org](www.federated-learning.org)
 
 

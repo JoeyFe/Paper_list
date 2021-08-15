@@ -137,7 +137,7 @@ Local Differential Privacy (LDP)局部差异隐私：数据所有者（参与方
 Distributed Differential Privacy (DDP)分布式差分隐私：可以说是取每个参与方做差分隐私的参数，学习他的分布学到一个代表所有参与方差分隐私的参数，（具体要看论文）
 
 ## 6 ROBUSTNESS-FOCUSED FL DEFENSE 
-### 6.1 <font color=#00ffff> Byzantine Robustness </font>
+### 6.1 `Byzantine Robustness`
 对于拜占庭 Byzantine-resilient aggregation，如果高达50%的参与者在对抗时收敛是鲁棒的，则为拜占庭容错[13]
 
 具体实践

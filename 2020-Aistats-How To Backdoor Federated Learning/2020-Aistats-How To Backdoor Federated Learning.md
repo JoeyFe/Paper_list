@@ -44,7 +44,7 @@ $$\mathcal{L}_{\text {ano }}=1-\cos \left(L, G^{t}\right)$$
 
 **Train-and-scale（上传维度）：**
 
-控制攻击方影响全局模型的参数$\gamma$
+控制攻击方影响全局模型的参数 $\gamma$ 
 $$
 \gamma=\frac{S}{\left\|X-G^{t}\right\|_{2}}
 $$
@@ -55,7 +55,7 @@ $$
 
 （2）先训练一些小模型估计良性模型的参数分布，在把$S$这个分布的上届附近
 
- $\mathcal{L}_{\text {class }}$是后门模型的分类损失（同时对正常任务和后门任务），$\mathcal{L}_{\text {ano }}$可以是权值矩阵之间的p范数距离或更高级的权值可塑性惩罚
+ $\mathcal{L}_{\text {class }}$ 是后门模型的分类损失（同时对正常任务和后门任务）， $\mathcal{L}_{\text {ano }}$ 可以是权值矩阵之间的p范数距离或更高级的权值可塑性惩罚
 
 训练后门模型的算法流程：
 

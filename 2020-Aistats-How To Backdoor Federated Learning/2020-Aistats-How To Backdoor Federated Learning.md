@@ -26,9 +26,8 @@
 $$X=G^{t}+\frac{\eta}{n} \sum_{i=1}^{m}\left(L_{i}^{t+1}-G^{t}\right)$$
 
 当模型接近收敛时$\sum_{i=1}^{m-1}\left(L_{i}^{t+1}-G^{t}\right) \approx 0$，所以每次要上传的本地模型为
-$$
-\widetilde{L}_{m}^{t+1}=\frac{n}{\eta} X-\left(\frac{n}{\eta}-1\right) G^{t}-\sum_{i=1}^{m-1}\left(L_{i}^{t+1}-G^{t}\right) \approx \frac{n}{\eta}\left(X-G^{t}\right)+G^{t}
-$$
+
+$$\widetilde{L}_{m}^{t+1}=\frac{n}{\eta} X-\left(\frac{n}{\eta}-1\right) G^{t}-\sum_{i=1}^{m-1}\left(L_{i}^{t+1}-G^{t}\right) \approx \frac{n}{\eta}\left(X-G^{t}\right)+G^{t}$$
 
 **Constrain-and-scale(松紧方式)：**
 
@@ -37,9 +36,7 @@ $$
 训练backdoor模型$X$的两个原则
 （1）奖励模型的准确性
 （2）惩罚它偏离了聚合器认为的“正常”的东西。
-$$
-\mathcal{L}_{\text {model }}=\alpha \mathcal{L}_{\text {class }}+(1-\alpha) \mathcal{L}_{\text {ano }}
-$$
+$$ \mathcal{L}_{\text {model }}=\alpha \mathcal{L}_{\text {class }}+(1-\alpha) \mathcal{L}_{\text {ano }}$$
 $$\mathcal{L}_{\text {ano }}=1-\cos \left(L, G^{t}\right)$$
 
 **Train-and-scale（上传维度）：**
